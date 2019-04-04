@@ -1,0 +1,70 @@
+Hasil proses<hr/>
+<?php
+	$nim = $_POST["nim"];
+	echo "NIM = ".$nim."<br/>";
+	$nama = $_POST["nama"];
+	echo "NAMA = ".$nama."<br/>";
+	$jurusan =$_POST["jurusan"];
+	switch ($jurusan)
+	{
+		case "TI":
+			echo "Jurusan anda Teknik Informatika<br/>";
+			break;
+		case "SI":
+			echo "Jurusan anda Sistem Informasi</br>";
+			break;
+		case "MI":
+			echo "Jurusan anda Manajemen Informatika</br>";
+			break;
+		case "TK":
+			echo "Jurusan anda Teknik Komputer</br>";
+			break;
+		case "KA":
+			echo "Jurusan anda Komputerisasi Akuntansi</br>";
+			break;
+		default :
+			echo "Jurusan tidak ada<br/>";
+	}
+	$makul = $_POST["matakuliah"];
+	echo "MATA KULIAH = ".$makul."<br/>";
+	$tugas = $_POST["tugas"];
+	$nilaitugas = $tugas*30/100;
+	echo " TUGAS KULIAH = ".$nilaitugas."<br/>";
+	$uts =$_POST["uts"];
+	$hasiluts = $uts*30/100;
+	echo "UTS = ".$hasiluts."<br/>";
+	$uas = $_POST["uas"];
+	$hasiluas = $uas*40/100;
+	echo "UAS = ".$hasiluas."<br/>";
+	$angka = $nilaitugas + $hasiluas + $hasiluts ;
+	echo "Angka = ".$angka."<br/>";
+		if ($angka>=80)
+		{
+		echo "Nilai = A <br/>";
+		echo "Keterangan = Lulus <br/";
+		}
+		elseif($angka >=60)
+		{
+		echo "Nilai = B <br/>";
+		echo "Keterangan = Lulus <br/";
+		}
+		elseif($angka >=40)
+		{
+		echo "Nilai = C <br/>";
+		echo "Keterangan = Lulus <br/>";
+		}
+		elseif($angka>=20)
+		{
+		echo "Nilai = D <br/>";
+		echo "Keterangan = Tidak lulus <br/>";
+		}
+		else {
+		echo "Data yang di masukkan salah <br/>";
+		}
+		
+		
+		
+		
+	
+
+?>

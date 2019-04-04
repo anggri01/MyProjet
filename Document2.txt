@@ -1,0 +1,63 @@
+//Modul_1 ContohString_2
+public class pembagian(
+    public static voit main(String[] args)(
+    int a=5,b=2,c;
+    c=a/b;
+      System.out.printIn("Hasil pembagian = "=c);
+      
+      }
+ }
+    
+
+
+PREDICATES
+Nondeterm anak ( orang, orang)
+Istri ( orang, orang)
+Ibu ( orang, orang)
+Nondeterm wanita( orang)
+Nondeterm pria ( orang)
+Nondeterm bapak  ( orang, orang)
+Nondeterm saudara_perempuan ( orang, orang)
+Nondeterm Mertua ( orang, orang)
+Nondeterm Bibi ( orang, orang)
+
+CLAUSES
+Anak (teti, budi).
+Anak (harun,budi).
+Anak (amir,harun).
+Anak (susi,harum).
+Anak (siti,hasan).
+Anak (lukman,hasan).
+Istri (siti,harun).
+Ibu (wati,harun).
+Wanita (teti).
+Wanita(susi).
+Wanita (siti).
+Wanita (wati).
+Pria (budi).
+Pria (harun).
+Pria (hasan).
+Pria (lukman).
+
+Bapak (X, Y)  :- anak(Y, X).
+Saudara_perempuan(X, Y) :- anak(X, Z), anak(Y,  Z).
+
+Mertua(X, Y) :- istri (Y, Z), anak(Z, X).
+Mertua(X, Y) :- istri (Y, Z), ibu (X, Z).
+Mertua(X, Y) :- bapak (X, Z), istri(Z, Y).
+
+Bibi (X, Y) :- saudara_perempuan (X, Z), anak(Y, Z).
+
+GOAL
+saudara_perempuan(X, Y).
+
+ 
+
+Goal 
+mertua (X, Y).
+
+ 
+Goal 
+bibi(X, Y).
+
+ 

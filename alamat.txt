@@ -1,0 +1,17 @@
+http://serverstudent.lab.akakom/~restaba10161/share/rule_bisnis.txt
+
+STUDI KASUS JUAL BELI
+
+suatu sistem jual beli terdiri dari 4 buah entitas :
+- Penjual
+- Pembeli
+- Produk
+- Transaksi
+dimana masing masing dari entitas diatas minimal memiliki atribut : id_(nama entitas)*sebagai kunci primer, *untuk atribut selebihnya silahkan ditambahkan sendiri sesuai dengan entitas yang ada.
+
+relasi nya dan alurnya adalah sebagai berikut :
+- 1 penjual melayani 1 atau banyak pembeli
+- 1 penjual menjual 1 atau banyak produk
+- 1 transaksi memiliki 1 atau banyak produk.
+
+SILAHKAN DITRANSFORMASIKAN KEDALAM ERD !
